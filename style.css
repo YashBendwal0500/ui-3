@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: auto;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-weight: 900;
+}
+.navbar ul  img{
+    width: 50px;
+    height: 50px;
+}
+.navbar ul:first-child li{
+    margin-top: 17px;
+}
+.navbar ul:first-child{
+    width: 12%;
+    color: #00653D;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.navbar ul:nth-child(2){
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul:nth-child(3){
+    width: 15%;
+    color: #00653D;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul button{
+    width: 80px;
+    height: 28px;
+    background-color: #00653D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.navbar ul button:hover{
+    background-color: white;
+    color: #00653D;
+    border: 2px solid #00653D;
+}
+.navbar ul:nth-child(3) li{
+    margin-top: 8px;
+}
+.hero-section{
+    width: 100%;
+    height: 400px;
+    display: flex;
+
+}
+.text-section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 80px;
+}
+.text-section h1{
+    font-size: 45px;
+    font-weight: 900;
+    line-height: normal;
+
+}
+.text-section span{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+
+}
+.text-section span button{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: #00653D;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 10px 0px 0px rgba(0,101,61,1);
+}
+.text-section span p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #00653D;
+    margin-top: 22px;
+}
+.text-section span p i{
+    font-size: 22px;
+}
+.text-section p{
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.img-section{
+    width: 50%;
+    height: 100%;
+}
+.img-section img{
+    padding-left: 50px;
+}
+.box-section{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.box{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.boxa{
+    height: 80px;
+    width: 220px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 0px 0px rgb(159, 198, 190);
+}
+.boxa:hover{
+    box-shadow: 10px 10px 0px 0px rgb(79, 122, 114);;
+}
+.boxa p{
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+}
+.boxs{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    
+}
+.boxs img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+@media (max-width:768px) {
+   
+    .main-container{
+        width: 100%;
+        height: auto;
+    }
+    .navbar{
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        padding-inline: 30px;    
+    }
+    .navbar ul li{
+        font-size: 12px;
+        font-weight: 900;
+    }
+    .navbar ul  img{
+        height: 35px;
+        width: 35px;
+        margin-top: 8px;
+    }
+    .navbar ul img:hover{
+        height: 45px;
+        width: 45px;
+    }
+    .navbar ul:first-child li{
+        margin-top: 17px;
+    }
+    .navbar ul:first-child{
+        width: 15%;
+        justify-content: space-between;
+        
+    }
+    .navbar ul:nth-child(2){
+       display: none;
+    }
+    .navbar ul:nth-child(3) li{
+        display: none;
+    }
+    .navbar ul button{
+        width: 100px;
+        height: 25px;
+        font-size: 10px;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+    .hero-section{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .text-section{
+        width: 100%;
+        height: auto;
+        padding-left: 30px;
+        
+    }
+    .text-section h1{
+        font-size: 50px;
+        font-weight: 600;
+    
+    }
+    .text-section h1 br{
+        display: none;
+    }
+    .text-section p{
+        font-size: 12px;
+    }
+    .text-section p br{
+        display: none;
+    }
+    .text-section span{
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        padding-inline: 10px;
+       
+    
+    }
+    .text-section span button{
+        height: 40px;
+        width: 130px;
+        font-size: 12px;
+        
+    }
+    .text-section span p{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .text-section span p i{
+        font-size: 22px;
+    }
+    .text-section p{
+        font-size: 16px;
+        font-weight: 200;
+        line-height: normal;
+        margin-top: 20px;
+    }
+
+    .img-section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-section img{
+        width: 100%;
+        height: auto;
+    }
+    .box-section{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+    .boxa{
+        width: 200px;
+        height: 60px;
+        margin-top: 20px;
+    }
+    .boxa p{
+        font-size: 14px;
+       
+    }
+    .boxs{
+        height: 45px;
+        width: 45px;
+        
+    }
+    .boxs img{
+        height: 45px;
+        width: 45px;
+    }
+
+}
